@@ -1,5 +1,5 @@
 import React from 'react'
-import { useThemeStore } from '../store/useThemestore';
+import { useThemeStore } from '../store/useThemeStore';
 import { PaletteIcon } from 'lucide-react';
 import { THEMES } from '../constant/data';
 
