@@ -2,7 +2,7 @@ import { ShipWheelIcon } from 'lucide-react';
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import useLogin from '../hooks/useLogin';
-import { useThemeStore } from '../store/useThemestore';
+import { useThemeStore } from '../store/useThemeStore';
 
 const LoginPage = () => {
   const [loginData,setLoginData] = useState({
