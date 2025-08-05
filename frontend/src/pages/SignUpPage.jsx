@@ -7,7 +7,7 @@ import { useThemeStore } from "../store/useThemeStore";
 
 const SignUpPage = () => {
   const [signupData, setSignupData] = useState({
-    fullname: "",
+    fullName: "",
     email: "",
     password: "",
   });
@@ -66,11 +66,11 @@ const SignUpPage = () => {
                       type="text"
                       placeholder="Enter Full Name..."
                       className="input input-bordered w-full"
-                      value={signupData.fullname}
+                      value={signupData.fullName}
                       onChange={(e) =>
                         setSignupData({
                           ...signupData,
-                          fullname: e.target.value,
+                          fullName: e.target.value,
                         })
                       }
                       required
