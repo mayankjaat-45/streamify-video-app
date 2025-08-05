@@ -11,7 +11,7 @@ import { Toaster } from 'react-hot-toast';
 import PageLoader from "./components/PageLoader";
 import useAuthUser from "./hooks/useAuthUser";
 import Layout from "./components/Layout";
-import { useThemeStore } from "./store/useThemestore";
+import { useThemeStore } from "./store/useThemeStore";
 
 const App = () => {
   //tanstack Query
