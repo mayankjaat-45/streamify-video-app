@@ -3,7 +3,7 @@ import { ShipWheelIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import useSignup from "../hooks/useSignup";
-import { useThemeStore } from "../store/useThemestore";
+import { useThemeStore } from "../store/useThemeStore";
 
 const SignUpPage = () => {
   const [signupData, setSignupData] = useState({
