@@ -11,7 +11,7 @@ const OnboardingPage = () => {
   const queryClient = useQueryClient();
 
   const [formState, setFormState] = useState({
-    fullname: authUser?.fullname || "",
+    fullName: authUser?.fullName || "",
     bio: authUser?.bio || "",
     nativeLanguage: authUser?.nativeLanguage || "",
     learningLanguage: authUser?.learningLanguage || "",
@@ -34,7 +34,7 @@ const OnboardingPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!formState.fullname || !formState.bio || !formState.nativeLanguage || !formState.learningLanguage || !formState.location) {
+    if (!formState.fullName || !formState.bio || !formState.nativeLanguage || !formState.learningLanguage || !formState.location) {
       toast.error("Please fill all required fields");
       return;
     }
@@ -96,9 +96,9 @@ const OnboardingPage = () => {
               <input
                 type="text"
                 name="fullname"
-                value={formState.fullname}
+                value={formState.fullName}
                 onChange={(e) =>
-                  setFormState({ ...formState, fullname: e.target.value })
+                  setFormState({ ...formState, fullName: e.target.value })
                 }
                 className="input input-bordered w-full"
                 placeholder="Your Full Name..."
